@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "astro": "^1.6.11",
+    "astro-spa": "^1.3.9",
     "sass": "^1.56.1"
   }
 }

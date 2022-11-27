@@ -1,5 +1,6 @@
 ---
 import Header from '../components/Header.astro';
+import { Spa } from 'astro-spa'
 
 export interface Props {
 	title: string;
@@ -19,7 +20,7 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<Header />
-		<slot />
+		<Spa />
 	</body>
 </html>
 <style is:global>

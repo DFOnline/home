@@ -20,7 +20,15 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<Header />
-		<Spa />
+		<main>
+			<slot />
+		</main>
+		<Spa 
+			defaultAnimation = { false }
+			progressBar      = { false }
+			prefetch
+			cache
+		/>
 	</body>
 </html>
 <style is:global>

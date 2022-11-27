@@ -1,0 +1,39 @@
+<header>
+    <a href="/" class="home" id="home">
+        <img src="/dfonline.png" alt="Logo" />
+        <span>DFOnline</span>
+    </a>
+</header>
+
+<style lang="scss">
+    header {
+        background-color: #0006;
+        padding: 1em;
+    }
+
+    a {
+        width: fit-content;
+        margin-block: auto;
+        display: flex;
+        color: white;
+        font-size: 4ch;
+        text-decoration: none;
+
+        background-image: linear-gradient(to right, purple, #a100a1);
+        background-repeat: no-repeat;
+        background-position: 0 1.3em;
+
+        background-size: 0% 100%;
+        transition: background-size 100ms;
+        &:hover {
+            background-size: 100% 100%;
+        }
+    }
+
+    img {
+        aspect-ratio: 1-1;
+        margin-block: auto;
+        margin-right: 0.1em;
+        height: 2.5ch;
+    }
+</style>

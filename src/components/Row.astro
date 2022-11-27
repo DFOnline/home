@@ -1,0 +1,53 @@
+---
+export interface Props {
+    title: string;
+    href: string;
+}
+
+const { title, href } = Astro.props;
+---
+
+<section>
+    <a href={href} class="heading">
+        <h2>{title}</h2>
+        <span class="explore">Explore »</span>
+    </a>
+    <div class="cards">
+        <slot />
+    </div>
+</section>
+
+<style lang="scss">
+    .cards {
+        display: flex;
+        border-inline: 1px solid white;
+        padding: 1ch;
+        height: 15em;
+        overflow-x: scroll;
+        scrollbar-width: none;
+        max-width: 100%;
+    }
+
+    section {
+        background-color: #0006;
+        padding: 1em;
+
+        .heading {
+            display: flex;
+            color: white;
+            text-decoration: none;
+
+            & > * {
+                margin: 20px;
+            }
+
+            .explore {
+                margin-left: auto;
+                display: flex;
+            }
+            &:hover .explore {
+                text-decoration: underline;
+            }
+        }
+    }
+</style>

@@ -1,12 +1,59 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+import Row from '../components/Row.astro';
 ---
 
 <Layout title="DFOnline">
-	<main>
-		
-	</main>
+	<section class="text">
+		Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere tempore, nisi autem veritatis sit recusandae et pariatur odio animi dolorum odit laboriosam cum beatae sint eum laudantium aperiam. Animi, eaque.
+	</section>
+
+	<section class="rows">
+		<Row title="DF Templates" href="/templates">
+			<div>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aperiam at aliquid minima, recusandae aspernatur voluptatum cum commodi modi voluptas molestias exercitationem in corrupti ullam iure amet velit voluptatem quisquam.
+			</div>
+			<div>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, inventore, sequi doloremque natus earum ullam fugiat nulla neque sit quas molestias voluptate velit recusandae. Explicabo dignissimos quaerat minus libero repellendus.
+			</div>
+			<div>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, inventore, sequi doloremque natus earum ullam fugiat nulla neque sit quas molestias voluptate velit recusandae. Explicabo dignissimos quaerat minus libero repellendus.
+			</div>
+		</Row>
+		<Row title="DF Plots" href="/plots">
+			<div>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aperiam at aliquid minima, recusandae aspernatur voluptatum cum commodi modi voluptas molestias exercitationem in corrupti ullam iure amet velit voluptatem quisquam.
+			</div>
+			<div>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, inventore, sequi doloremque natus earum ullam fugiat nulla neque sit quas molestias voluptate velit recusandae. Explicabo dignissimos quaerat minus libero repellendus.
+			</div>
+			<div>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, inventore, sequi doloremque natus earum ullam fugiat nulla neque sit quas molestias voluptate velit recusandae. Explicabo dignissimos quaerat minus libero repellendus.
+			</div>
+		</Row>
+		<Row title="DFScript Scripts" href="/scripts">
+			<div>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aperiam at aliquid minima, recusandae aspernatur voluptatum cum commodi modi voluptas molestias exercitationem in corrupti ullam iure amet velit voluptatem quisquam.
+			</div>
+			<div>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, inventore, sequi doloremque natus earum ullam fugiat nulla neque sit quas molestias voluptate velit recusandae. Explicabo dignissimos quaerat minus libero repellendus.
+			</div>
+			<div>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, inventore, sequi doloremque natus earum ullam fugiat nulla neque sit quas molestias voluptate velit recusandae. Explicabo dignissimos quaerat minus libero repellendus.
+			</div>
+		</Row>
+	</section>
 </Layout>
 
 <style>
+	.text {
+		padding: 2em;
+	}
+
+	.rows {
+		display: grid;
+		padding: 2em;
+		gap: 2em;
+	}
 </style>

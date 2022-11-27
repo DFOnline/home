@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 
 import Row from '../components/Row.astro';
+import Card from '../components/Card.astro';
 ---
 
 <Layout title="DFOnline">
@@ -10,50 +11,41 @@ import Row from '../components/Row.astro';
 	</section>
 
 	<section class="rows">
-		<Row title="DF Templates" href="/templates">
-			<div>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aperiam at aliquid minima, recusandae aspernatur voluptatum cum commodi modi voluptas molestias exercitationem in corrupti ullam iure amet velit voluptatem quisquam.
-			</div>
-			<div>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, inventore, sequi doloremque natus earum ullam fugiat nulla neque sit quas molestias voluptate velit recusandae. Explicabo dignissimos quaerat minus libero repellendus.
-			</div>
-			<div>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, inventore, sequi doloremque natus earum ullam fugiat nulla neque sit quas molestias voluptate velit recusandae. Explicabo dignissimos quaerat minus libero repellendus.
-			</div>
+		<Row title="My DF Templates" href="/templates">
+			<Card title="Template" description="Description here." />
 		</Row>
-		<Row title="DF Plots" href="/plots">
-			<div>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aperiam at aliquid minima, recusandae aspernatur voluptatum cum commodi modi voluptas molestias exercitationem in corrupti ullam iure amet velit voluptatem quisquam.
-			</div>
-			<div>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, inventore, sequi doloremque natus earum ullam fugiat nulla neque sit quas molestias voluptate velit recusandae. Explicabo dignissimos quaerat minus libero repellendus.
-			</div>
-			<div>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, inventore, sequi doloremque natus earum ullam fugiat nulla neque sit quas molestias voluptate velit recusandae. Explicabo dignissimos quaerat minus libero repellendus.
-			</div>
+		<Row title="My DF Plots" href="/plots">
+			<Card title="Plot 1234" description="Some really large description in order to exceed to maximum length within the cards description box to test how the css handles large amounts of text. I could have used lorem ipsum again but I decided to describe what I was doing." />
 		</Row>
-		<Row title="DFScript Scripts" href="/scripts">
-			<div>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aperiam at aliquid minima, recusandae aspernatur voluptatum cum commodi modi voluptas molestias exercitationem in corrupti ullam iure amet velit voluptatem quisquam.
-			</div>
-			<div>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, inventore, sequi doloremque natus earum ullam fugiat nulla neque sit quas molestias voluptate velit recusandae. Explicabo dignissimos quaerat minus libero repellendus.
-			</div>
-			<div>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, inventore, sequi doloremque natus earum ullam fugiat nulla neque sit quas molestias voluptate velit recusandae. Explicabo dignissimos quaerat minus libero repellendus.
-			</div>
+		<Row title="My DFScript Scripts" href="/scripts">
+			<Card title="Script" description="Description"></Card>
+			<Card title="Script" description="Description"></Card>
+			<Card title="Script" description="Description"></Card>
+			<Card title="Script" description="Description"></Card>
+			<Card title="Script" description="Description"></Card>
+			<Card title="Script" description="Description"></Card>
+			<Card title="Script" description="Description"></Card>
+			<Card title="Script" description="Description"></Card>
+			<Card title="Script" description="Description"></Card>
+			<Card title="Script" description="Description"></Card>
+			<Card title="Script" description="Description"></Card>
+			<Card title="Script" description="Description"></Card>
+			<Card title="Script" description="Description"></Card>
+			<Card title="Script" description="Description"></Card>
 		</Row>
 	</section>
 </Layout>
 
 <style>
 	.text {
-		padding: 2em;
+		padding: 2.5em;
 	}
 
 	.rows {
-		display: grid;
+		display: flex;
+		flex-direction: column;
 		padding: 2em;
+		padding-top: 1em;
 		gap: 2em;
 	}
 </style>

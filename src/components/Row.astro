@@ -19,16 +19,18 @@ const { title, href } = Astro.props;
 
 <style lang="scss">
     .cards {
+        height: 15em;
         display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
         border-inline: 1px solid white;
         padding: 1ch;
-        height: 15em;
-        overflow-x: scroll;
-        scrollbar-width: none;
-        max-width: 100%;
+        
+        scrollbar-width: thin;
     }
 
     section {
+        width: 100%;
         background-color: #0006;
         padding: 1em;
 
